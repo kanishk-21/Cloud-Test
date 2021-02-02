@@ -126,5 +126,13 @@ bq load demo_dataset.demo_table2 --autoformat=True --source_format=CSV  gs://kan
 # Query table
 bq query 'SELECT * FROM demo_project:demo_dataset.demo_table1'
 
+SELECT emp.*,
+  emp2.*
+FROM
+  `admin-project-301608.employee_test.Records1` AS emp
+JOIN
+  `admin-project-301608.employee_test.Records2` AS emp2
+ON
+ emp.First_Name= emp2.First_Name 
 
 
