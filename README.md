@@ -120,6 +120,7 @@ bq mkd demo_dataset
 
 # Making and loading table in dataset
 bq load demo_dataset.demo_table1 --autoformat=True --source_format=CSV  gs://kani-gcp-bucket-2/Cloud-Test/100 Records.csv
+
 bq load demo_dataset.demo_table2 --autoformat=True --source_format=CSV  gs://kani-gcp-bucket-2/Cloud-Test/1000 Records.csv
 
 # Query table
